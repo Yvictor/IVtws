@@ -314,10 +314,10 @@ class IVstream:
         display(HBox(([figC,figP])))
 
 
-    def init_table(self):
+    def init_table(self,select_settled=0):
         self.CallIVtable = pd.DataFrame()
         self.PutIVtable = pd.DataFrame()
-        self.update_data(exdat=0,seln=2)
+        self.update_data(exdat=select_settled,seln=2)
         CallIV = self.Callless[['履約價','隱含波動率','時間']].copy()
         CallIV.loc[:,'履約價']=self.Callless['履約價'].map(lambda x:'Call_'+str(x))
         PutIV = self.Putless[['履約價','隱含波動率','時間']].copy()

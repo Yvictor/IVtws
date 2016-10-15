@@ -50,7 +50,7 @@ init_notebook_mode()
 
 ```python
 IVtw = IVstream((8,45),(13,45))
-IVtw.init_table()
+IVtw.init_table(select_settled=0)#select_settled is the selectbox of option qoute's settlement date default is the first week option
 ```
 
 ### update data and recalculate the Implied Volitity
