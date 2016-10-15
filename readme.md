@@ -3,7 +3,7 @@
 - 資料來源 [台灣期貨交易所報價](http://info512.taifex.com.tw/)
 
 ## Requires
-- python 3
+- python 2.7 or 3.x
 - pandas >= 0.18
 - numpy
 - matplotlib
@@ -14,10 +14,18 @@
 - bqplot (optional)
 - colour (optional)
 
+
 ## Quick start example
 
+```cmd
+git clone https://github.com/Yvictor/IVtws.git
+cd IVtws
+jupyter Notebook
+```
+### using jupyter notebook
 ```python
 from IVtws import IVstream
+form IPython.display import display
 import matplotlib.pyplot as plt
 ```
 
